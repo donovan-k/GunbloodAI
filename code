@@ -1,0 +1,75 @@
+from pynput.keyboard import Key, Controller as KeyboardController
+from pynput.mouse import Button, Controller as MouseController
+import time
+
+
+mouse = MouseController()
+keyboard = KeyboardController()
+
+
+counter = 1
+
+time.sleep(5)
+mouse.position = (968, 571)
+mouse.click(Button.left, 1)
+time.sleep(1)
+mouse.position = (974, 762)
+mouse.click(Button.left, 1)
+
+
+while counter < 50:
+    if counter != 3:
+        time.sleep(1)
+        time.sleep(1.5)
+        mouse.position = (614,764)
+        time.sleep(1.855)
+        mouse.position = (1282, 452)
+        mouse.click(Button.left, 1)
+        time.sleep(0.7)
+        mouse.position = (1328, 595)
+        mouse.click(Button.left, 5)
+        time.sleep(3)
+        mouse.position = (956, 664)
+        mouse.click(Button.left,1)
+
+    if counter == 3:
+        time.sleep(2)
+        mouse.position = (947, 577)
+        mouse.click(Button.left, 1)
+        time.sleep(.25)
+        mouse.position = (1273, 535)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1273, 535)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1273, 535)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1273, 535)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1273, 535)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1273, 535)
+        mouse.click(Button.left, 1)
+        time.sleep(1)
+
+    if counter == 6:
+        mouse.position = (1289, 486)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1333, 474)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1240, 517)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+        mouse.position = (1222, 586)
+        mouse.click(Button.left, 1)
+        time.sleep(.5)
+    counter = counter + 1
+
+
+
